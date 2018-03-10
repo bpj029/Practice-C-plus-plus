@@ -8,7 +8,7 @@ using namespace std;
 class TicketBooking {
     vector<int> *seats;
     public:
-    TicketBooking(int length) {
+    TicketBooking(int length, int rows, int columns) {
         seats = new vector<int>(length, 0);
     }
     pair<int, int> book_tickets(int num) {
@@ -30,7 +30,7 @@ int main()
     cout << "Columns: ";
     cin >> no_of_columns;
     
-    TicketBooking tb(200);
+    TicketBooking tb(total_no_of_tickets, no_of_rows, no_of_columns);
     while(1)
     {
         cout << "Enter the no. of tickets to be booked: ";
