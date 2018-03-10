@@ -1,3 +1,4 @@
 # project1
+1. Movie ticket booking app.
 
-My First github project.
+It prints the range of seat numbers which are contiguous when no. of tickets to be booked is input.
