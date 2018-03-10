@@ -36,8 +36,10 @@ int main()
         cout << "Enter the no. of tickets to be booked: ";
         cin >> no_of_tickets;
         pair<int, int> range = tb.book(no_of_tickets);
-        if( range.first == 0 && range.second == 0)
+        if( range.first == 0 && range.second == 0) {
+            cout << "All tickets are exhausted\n";
             break;
+        }
         else {
             cout << "Congrats ... Your tickets are as follows:" << endl;
             int first = range.first;
