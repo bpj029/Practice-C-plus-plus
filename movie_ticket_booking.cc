@@ -11,7 +11,7 @@ class TicketBooking {
     TicketBooking(int length) {
         seats = new vector<int>(length, 0);
     }
-    pair<int, int> book_ticket(int num) {
+    pair<int, int> book_tickets(int num) {
         int start, end;
         return make_pair(start, end);
     }
@@ -35,7 +35,7 @@ int main()
     {
         cout << "Enter the no. of tickets to be booked: ";
         cin >> no_of_tickets;
-        pair<int, int> range = tb.book(no_of_tickets);
+        pair<int, int> range = tb.book_tickets(no_of_tickets);
         if( range.first == 0 && range.second == 0) {
             cout << "All tickets are exhausted\n";
             break;
